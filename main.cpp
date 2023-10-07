@@ -1,4 +1,11 @@
-
+/*Program: Add Random Numbers, display school-style format
+ * Carrie Bailey
+ * 10/7/2023
+ * Version 1
+ * This program generates two random numbers, asks user to guess at their sum, then prints them out stacked over a
+ * horizontal dotted line with the answer below the line, like old style school arithmetic problems
+*/
+//my algorithm:
 /*
  * STEPS
  *greet user and ask for name
@@ -11,7 +18,7 @@
  * display correct/incorrect message IF STaTEMENT
  * display school style number addition problem with correct answer under 4 dashes
  * END STEPS
- * 
+ *
  * VaRIaBLES
  * /TYPE string/
  * user name: user_name
@@ -23,9 +30,9 @@
  * add the 2 numbers = : sum
  * width of school style problem display: width_output
  * END VaRIaBLES
- *
- *
+ **
  * */
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -41,20 +48,17 @@ int main() {
     string user_name;
 
     //Greet user
-    /* UNHIDE FOR FINaL PROGRaM
-     * cout << "Hi! Welcome to Carrie's Number Calculator! What is your name? ";
+
+    cout << "Hi! Welcome to Carrie's Number Calculator! What is your name? ";
     cin >> user_name;
     cout << "Hi " << user_name <<"! Let's play!"<<endl;
-     */
+
     // Generate 2 random numbers
-    /*UNHIDE FOR FINaL PROGRaM
-     * srand((unsigned) time(nullptr));
+    srand((unsigned) time(nullptr));
     //random numbers must be between 1 & 99
-    a = rand() % 98 + 1;
+    num_1 = rand() % 98 + 1;
     num_2 = rand() % 98 + 1;
-     */
-    num_1=11;
-    num_2=9;
+
     //add the two random numbers
     sum = num_1 + num_2;
 
