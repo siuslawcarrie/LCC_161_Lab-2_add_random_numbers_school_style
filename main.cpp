@@ -82,16 +82,16 @@ int main() {
         {
             // answer is incorrect.
             cout << "Sorry, that is incorrect. The correct answer is : " <<sum << endl;
-        }
+        } cout << setiosflags(ios::right);
+    cout << setw(width_output) << num_1 << endl;
+    cout << "+ " << setw(2) << num_2 << endl;
+    // display dashes underneath 2nd number and answer
+    width_output = 4;
+    cout << setfill('-') << setw(width_output) << "-" << endl;
+    cout << setfill(' ') << setw(width_output) << sum << endl;
 
         // Display school-style math problem numbers, stacked
-        cout << setiosflags(ios::right);
-            cout << setw(width_output) << num_1 << endl;
-            cout << "+ " << setw(2) << num_2 << endl;
-            // display dashes underneath 2nd number and answer
-            width_output = 4;
-            cout << setfill('-') << setw(width_output) << "-" << endl;
-            cout << setfill(' ') << setw(width_output) << sum << endl;
+
 
         /*
         else {
@@ -119,11 +119,5 @@ int main() {
         cout << setfill('-') << setw(width_output) << "-" << endl;
         cout << setfill(' ') << setw(width_output) << sum << endl;
 */
-
-
-
-
-
-
     return 0;
 }
